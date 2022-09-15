@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- siti.barang tree view -->
+    <record id="siti_barang_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Obat</field>
+        <field name="model">siti.barang</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name" />
+                <field name="harga_beli" />
+                <field name="harga_jual" />
+                <field name="stok" />
+                <field name="kelompokbarang_id" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- siti.barang form view -->
+    <record id="siti_barang_view_form" model="ir.ui.view">
+        <field name="name">Form Obat</field>
+        <field name="model">siti.barang</field>
+        <field name="arch" type="xml">
+            <form string="Barang">
+
+                <sheet>
+                    <group name="Apotek" string="Apotek">
+                        <!-- Add your fields here -->
+                        <field name="name" />
+                        <field name="harga_beli" />
+                        <field name="harga_jual" />
+                         <field name="stok" />
+                    </group>
+
+                    <group name="Kelompok " string="Kelompok ">
+                        <field name="kelompokbarang_id" />
+                    </group>
+
+                    <group name="pemasok" string="Pemasok">
+                        <field name="pemasok_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- siti.barang action window -->
+    <record id="siti_barang_action" model="ir.actions.act_window">
+        <field name="name">Daftar Obat</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">siti.barang</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem
+        id="siti_barang_menu_act"
+        name="Daftar Obat"
+        parent="siti_barang_menu_categ"
+        action="siti_barang_action"
+        sequence="10"/>
+
+</odoo>

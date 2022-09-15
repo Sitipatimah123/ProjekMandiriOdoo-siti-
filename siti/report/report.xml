@@ -1,0 +1,52 @@
+
+<odoo>
+
+    <odoo>
+    <record id="report_pemasok_xlsx" model="ir.actions.report">
+        <field name="name">Report Pemasok Excel</field>
+        <field name="model">siti.pemasok</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">siti.report_pemasok_xlsx</field>
+        <field name="report_file">siti.report_pemasok_xlsx</field>
+        <field name="binding_model_id" ref="model_siti_pemasok"/>
+        <field name="binding_type">report</field>
+    </record>
+    </odoo>
+
+    <odoo>
+    <record id="report_pemasok_pdf" model="ir.actions.report">
+        <field name="name">Print Pemasok pdf</field>
+        <field name="model">siti.pemasok</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">siti.report_pemasok_pdf</field>
+        <field name="report_file">siti.report_pemasok_pdf</field>
+        <field name="binding_model_id" ref="model_siti_pemasok"/>
+        <field name="binding_type">report</field>
+    </record>
+    </odoo>
+
+    <odoo>
+      <record id="report_penjualan_xlsx" model="ir.actions.report">
+        <field name="name">print Penjualan Exel</field>
+        <field name="model">siti.penjualan</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">siti.report_penjualan_xlsx</field>
+        <field name="report_file">siti.report_penjualan_xlsx</field>
+        <field name="binding_model_id" ref="model_siti_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+    </odoo>
+
+    <odoo>
+      <record id="report_penjualan_pdf" model="ir.actions.report">
+        <field name="name">Print faktur pdf</field>
+        <field name="model">siti.penjualan</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">siti.report_penjualan_pdf</field>
+        <field name="report_file">siti.report_penjualan_pdf</field>
+        <field name="binding_model_id" ref="model_siti_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+    </odoo>
+
+</odoo>

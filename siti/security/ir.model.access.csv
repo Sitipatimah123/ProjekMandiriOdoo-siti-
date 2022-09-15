@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_siti_kelompokbarang,access.siti.kelompokbarang,model_siti_kelompokbarang,,1,1,1,1
+access_siti_barang,access.siti.barang,model_siti_barang,,1,1,1,1
+access_siti_person,access.siti.person,model_siti_person,,1,1,1,1
+access_siti_apoteker,access.siti.apoteker,model_siti_apoteker,,1,1,1,1
+access_siti_kasir,access.siti.kasir,model_siti_kasir,,1,1,1,1
+access_siti_cleningservice,access.siti.cleningservice,model_siti_cleningservice,,1,1,1,1
+access_siti_pemasok,access.siti.pemasok,model_siti_pemasok,,1,1,1,1
+access_siti_penjualan,access.siti.penjualan,model_siti_penjualan,,1,1,1,1
+access_siti_detailpenjualan,access.siti.detailpenjualan,model_siti_detailpenjualan,,1,1,1,1
+
