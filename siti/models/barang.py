@@ -7,7 +7,7 @@ class Barang(models.Model):
     name = fields.Char(string='Nama Obat')
     harga_beli = fields.Integer(string='Harga Modal', required=True)
     harga_jual = fields.Integer(string='Harga Jual', required=True)
-    # Perubahannya ada di sini
+    # Perubahannya ada di sini ada perubahan lagi
     kelompokbarang_id = fields.Many2one(comodel_name='siti.kelompokbarang',
                                         string='Kelompok',
                                         ondelete='cascade')
